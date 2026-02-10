@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container {
+            display: grid;
+            width: 100%;
+            max-width: 760px;
+            height: 760px;
+            background-color: #000002;
+            grid-template: repeat(7, minmax(100px, 1fr)) / repeat(7, minmax(100px, 1fr));
+            gap: 10px;
+            border: 10px solid #000002;
+        }
+
+        .item {
+            background-color: #225095;
+        }
+
+        .blue1 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .white1 {
+            background-color: #fff;
+            grid-area: span 2 / span 3;
+        }
+
+        .blue2 {
+            grid-area: span 3 / span 2;
+        }
+
+        .white2 {
+            background-color: #fff;
+            grid-area: span 2 / span 2;
+        }
+
+        .blue3 {
+            grid-area: span 3 / span 3;
+        }
+
+        .yellow1 {
+            background-color: #FAC901;
+            grid-area: span 2 / span 2;
+        }
+
+        .yellow2 {
+            background-color: #FAC901;
+            grid-area: span 2 / span 1;
+
+        }
+
+        .white3 {
+            background-color: #fff;
+        }
+
+        .white4 {
+            background-color: #fff;
+            grid-area: span 2 / span 1;
+        }
+
+        .yellow3 {
+            background-color: #FAC901;
+        }
+
+        button {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #FAC901;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item blue1"></div>
+        <div class = "item white1"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+        <div class="item blue2"></div>
+        <div class = "item white2"></div>
+        <div class="item blue3"></div>
+
+        <div class = "item white2"></div>
+
+
+        <div class="item yellow1"></div>
+        <div class="item yellow2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+
+        <div class="item yellow3"></div>
+        <div class="item yellow3"></div>
+        <div class="item"></div>
+
+    </div>
+    <button onclick="window.location.href = 'secound.html';">Next Art Piece</button>
+
+</body>
+</html>
